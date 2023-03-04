@@ -1,6 +1,6 @@
 # Program - MessageBoxTimeout
 
-There is an undocumented function in the Windows API called `MessageBoxTimeoutA`. You can read more about it [here](http://pinvoke.net/default.aspx/user32.MessageBoxTimeout). It behaves similar to the regular `MessageBoxA` function, except it has a parameter that specifies a number of seconds to wait before automatically closing the message box.
+There is an undocumented function in the Windows API called `MessageBoxTimeoutA`. You can read more about it [here](http://pinvoke.net/default.aspx/user32.MessageBoxTimeout). It behaves like the regular `MessageBoxA` function, except it has a parameter that specifies a number of seconds to wait before automatically closing the message box.
 
 In this assignment, you will call the `MessageBoxTimeoutA` function from within your assembly program. This is designed to practice calling functions with more than four parameters while adhering to the [Microsoft x64 ABI](https://learn.microsoft.com/en-us/cpp/build/x64-software-conventions?view=msvc-170) calling conventions.
 
