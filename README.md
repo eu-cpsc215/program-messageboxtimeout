@@ -14,7 +14,7 @@ Your program must display a Windows message box using the `MessageBoxTimeoutA` f
 
 Here is an example screenshot of what the message box should look like:
 
-TODO
+![](screenshot.png)
 
 ## Notes
 
