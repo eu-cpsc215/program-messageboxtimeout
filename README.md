@@ -18,6 +18,8 @@ Here is an example screenshot of what the message box should look like:
 
 ## Notes
 
+Don't forget to add an external declaration for `MessageBoxTimeoutA` at the top of your assembly module!
+
 The parameters of the `MessageBoxTimeoutA` function are documented [here](http://pinvoke.net/default.aspx/user32.MessageBoxTimeout). Here is a summary of the parameters, in order:
 
 - `hwnd` - handle to a parent window. You can set this to NULL (`0`).
