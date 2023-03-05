@@ -14,7 +14,7 @@ Your program must display a Windows message box using the `MessageBoxTimeoutA` f
 
 Here is an example screenshot of what the message box should look like:
 
-![](screenshot.png)
+![](example.png)
 
 ## Notes
 
@@ -22,14 +22,14 @@ Don't forget to add an external declaration for `MessageBoxTimeoutA` at the top 
 
 The parameters of the `MessageBoxTimeoutA` function are documented [here](http://pinvoke.net/default.aspx/user32.MessageBoxTimeout). Here is a summary of the parameters, in order:
 
-- `hwnd` - handle to a parent window. You can set this to NULL (`0`).
+- `hwnd` - handle to a parent window. You can set this to `0`.
 - `text` - pointer to main text of the message box.
 - `title` - pointer to title of the message box.
 - `type` - an integer that stores characteristics about the message box, like what kind of buttons or icons to show. A list of options is documented [here](https://learn.microsoft.com/en-us/windows/win32/api/winuser/nf-winuser-messageboxa). Each option acts as a bitmask. The documentation page shows each option's equivalent hexadecimal value.
 - `wLanguageId` - used when dealing with different languages. You can set this to `0` to use the system default.
 - `milliseconds` - the number of milliseconds to wait before automatically closing the dialog. If set to `0`, the dialog does not automatically close.
 
-You will need to adhere to the Microsoft x64 ABI calling conventions when calling the function. This includes performing the necessary steps in the function prologue for `_main` to reserve stack space for parameters and shadow space, as well as ensure 16-byte alignment. If you get "access violation" exceptions, it is a good indication that something did not get put in the right place.
+You will need to adhere to the Microsoft x64 ABI calling conventions when calling the function. This includes performing the necessary steps in the function prologue for `_main` to reserve stack space for parameters and shadow space, as well as ensuring 16-byte alignment. If you get an "access violation" exception, it's a good sign something did not get put in the right place.
 
 ## Submission
 
