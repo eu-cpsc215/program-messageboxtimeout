@@ -7,10 +7,10 @@ In this assignment, you will call the `MessageBoxTimeoutA` function from within 
 ## Requirements
 
 Your program must display a Windows message box using the `MessageBoxTimeoutA` function. The message box must have the following properties:
-- The main text of the message box should say, "This message will automatically close in 5 seconds."
-- The title of the message box should display your name.
-- The message box should show an information icon on the left side of the dialog by using the `MB_ICONINFORMATION` type flag.
-- The message box should be configured to automatically close in five seconds.
+- The main text of the message box must say, "This message will automatically close in 5 seconds."
+- The title of the message box must display your name.
+- The message box must show an information icon on the left side of the dialog by using the `MB_ICONINFORMATION` type flag.
+- The message box must be configured to automatically close in five seconds.
 
 Here is an example screenshot of what the message box should look like:
 
